@@ -1,0 +1,650 @@
+
+/* 1. General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* 2. Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 22px 4%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.nav-links a {
+    font-size: 11px;
+    letter-spacing: 0.7px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #888888;
+}
+
+.brand-logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+
+/* 3. Main Banners */
+.hero-banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    background-color: #dedbd5;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-large {
+    min-height: 78vh;
+    margin-bottom: 64px;
+    align-items: flex-end;
+    padding: 70px 20px 9vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    ), url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=85");
+}
+
+.hero-medium {
+    min-height: 430px;
+    margin: 30px 4% 60px;
+    padding: 40px 20px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    ), url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1600&q=85");
+}
+
+.simulation-banner {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+    ), url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=85");
+}
+
+.streetwear-banner {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+    ), url("https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1600&q=85");
+}
+
+.kids-banner {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+    ), url("https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1600&q=85");
+}
+
+.winter-banner {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+    ), url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1600&q=85");
+}
+
+.hero-content {
+    color: #ffffff;
+}
+
+.hero-content h1,
+.hero-content h2 {
+    margin-bottom: 24px;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* 4. Buttons */
+.btn-outline {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #171717;
+}
+
+.btn-dark {
+    border-color: #171717;
+    color: #171717;
+}
+
+.btn-dark:hover {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+/* 5. General Sections */
+.section-container {
+    padding: 0 4% 70px;
+}
+
+.split-header,
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.split-header h2,
+.flex-between h2 {
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.header-desc {
+    max-width: 430px;
+    font-size: 14px;
+}
+
+.header-desc .btn-outline {
+    margin-top: 16px;
+}
+
+.section-title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* 6. Tabs */
+.tabs {
+    display: flex;
+    gap: 12px;
+    padding: 0 4%;
+    margin-bottom: 25px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: 1px solid #222222;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #222222;
+    cursor: pointer;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.tab.active,
+.tab:hover {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+/* 7. Product Grids */
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px 18px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 22px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+article {
+    min-width: 0;
+}
+
+.product-img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    margin-bottom: 13px;
+    background-color: #eeeeec;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+article:hover .product-img {
+    transform: scale(1.015);
+}
+
+/* Product Images */
+.jacket-1 {
+    background-image: url("https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=700&q=80");
+}
+
+.jacket-2 {
+    background-image: url("https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80");
+}
+
+.jacket-3 {
+    background-image: url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80");
+}
+
+.jacket-4 {
+    background-image: url("https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80");
+}
+
+.shirt-1 {
+    background-image: url("https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80");
+}
+
+.shirt-2 {
+    background-image: url("https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=80");
+}
+
+.shirt-3 {
+    background-image: url("https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=700&q=80");
+}
+
+.shirt-4 {
+    background-image: url("https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80");
+}
+
+.perfume-1 {
+    background-image: url("https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=700&q=80");
+}
+
+.perfume-2 {
+    background-image: url("https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=700&q=80");
+}
+
+/* 8. Product Information */
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.product-info h3 {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.price-old,
+.price-new {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.price-old {
+    margin-right: 5px;
+    color: #888888;
+    text-decoration: line-through;
+}
+
+.price-new {
+    font-weight: 600;
+}
+
+.promo {
+    display: block;
+    margin-top: 4px;
+    color: #777777;
+    font-size: 11px;
+}
+
+.add-btn {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 19px;
+    line-height: 1;
+}
+
+.add-btn:hover {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+/* 9. Perfume Promotion */
+.split-promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.promo-img {
+    min-height: 570px;
+    background-color: #e9e3dc;
+    background-image: url("https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1000&q=85");
+    background-position: center;
+    background-size: cover;
+}
+
+.promo-header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.promo-header h2 {
+    margin-bottom: 12px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.promo-header p {
+    font-size: 14px;
+}
+
+/* 10. Store Locations */
+.loc-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 14px;
+    background-color: #e8e6e2;
+    background-position: center;
+    background-size: cover;
+}
+
+.store-1 {
+    background-image: url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80");
+}
+
+.store-2 {
+    background-image: url("https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80");
+}
+
+.store-3 {
+    background-image: url("https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=800&q=80");
+}
+
+.loc-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px 12px;
+    font-size: 12px;
+}
+
+.loc-info h3 {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.loc-info a {
+    text-decoration: underline;
+}
+
+/* 11. Services */
+.services {
+    padding: 65px 4%;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 8px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.service-heading {
+    font-size: 20px;
+}
+
+.services-desc {
+    max-width: 700px;
+    margin: 18px auto 40px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.services .grid-3 h4 {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.services .grid-3 p {
+    color: #666666;
+    font-size: 13px;
+}
+
+/* 12. Footer */
+.footer {
+    padding: 55px 4% 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 35px;
+    margin-bottom: 55px;
+}
+
+.footer-cols h4 {
+    margin-bottom: 18px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.footer-cols p,
+.footer-cols a {
+    display: block;
+    margin-bottom: 12px;
+    color: #666666;
+    font-size: 12px;
+}
+
+.footer-cols a:hover {
+    color: #111111;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding-top: 25px;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.footer-bottom .brand-logo {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 27px;
+}
+
+.footer-bottom p {
+    color: #888888;
+    font-size: 11px;
+}
+
+/* 13. Tablet Layout */
+@media (max-width: 1000px) {
+    .top-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-cols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .promo-img {
+        min-height: 450px;
+    }
+}
+
+/* 14. Mobile Layout */
+@media (max-width: 600px) {
+    .top-nav {
+        position: static;
+        gap: 14px;
+        padding: 16px 5%;
+    }
+
+    .brand-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+    }
+
+    .hero-large {
+        min-height: 65vh;
+        margin-bottom: 45px;
+    }
+
+    .hero-medium {
+        min-height: 300px;
+        margin: 20px 4% 40px;
+    }
+
+    .section-container {
+        padding: 0 5% 45px;
+    }
+
+    .split-header,
+    .flex-between {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header-desc {
+        max-width: 100%;
+    }
+
+    .grid-4,
+    .grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px 12px;
+    }
+
+    .grid-2 {
+        gap: 12px;
+    }
+
+    .product-info h3 {
+        font-size: 12px;
+    }
+
+    .price-old,
+    .price-new {
+        font-size: 10px;
+    }
+
+    .add-btn {
+        flex-basis: 26px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .tabs {
+        padding: 0 5%;
+    }
+
+    .split-promo {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .promo-img {
+        min-height: 340px;
+    }
+
+    .promo-header h2 {
+        font-size: 22px;
+    }
+
+    .loc-info {
+        display: block;
+    }
+
+    .loc-info h3,
+    .loc-info p,
+    .loc-info a,
+    .loc-info span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .services {
+        padding: 45px 5%;
+    }
+
+    .services .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer {
+        padding: 40px 5% 20px;
+    }
+
+    .footer-cols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 18px;
+    }
+}
