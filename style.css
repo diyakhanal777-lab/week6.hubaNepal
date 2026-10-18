@@ -219,31 +219,63 @@ button {
 }
 
 .simulation-banner {
+    min-height: 90vh;
+    margin-bottom: 64px;
+    align-items: flex-end;
+    padding: 450px 20px 9vh;
+    margin-left: 17px;
+    margin-right: 17px;
+    border-radius: 17px;
+    overflow: hidden;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.25),
         rgba(0, 0, 0, 0.25)
-    ), url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=85");
+    ), url("https://static.wixstatic.com/media/7b7534_1408b61aa65f48ed92daba695e3127a5~mv2.jpeg/v1/fill/w_950,h_784,fp_0.50_0.49,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Still%202026-07-22%20184755_1_22_1_jpg.jpeg");
 }
 
 .streetwear-banner {
+    min-height: 90vh;
+    margin-bottom: 64px;
+    align-items: flex-end;
+    padding: 450px 20px 9vh;
+    margin-left: 17px;
+    margin-right: 17px;
+    border-radius: 17px;
+    overflow: hidden;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.25),
         rgba(0, 0, 0, 0.25)
-    ), url("https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1600&q=85");
+    ), url("https://static.wixstatic.com/media/7b7534_d85d309079ca407f9de87cec5f675d4a~mv2.png/v1/fill/w_950,h_780,fp_0.51_0.82,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/HubaStreetwearDesktop.png");
 }
 
 .kids-banner {
+    min-height: 90vh;
+    margin-bottom: 64px;
+    align-items: flex-end;
+    padding: 450px 20px 9vh;
+    margin-left: 17px;
+    margin-right: 17px;
+    border-radius: 17px;
+    overflow: hidden;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.25),
         rgba(0, 0, 0, 0.25)
-    ), url("https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=1600&q=85");
+    ), url("https://static.wixstatic.com/media/7b7534_8acd1e49b7a4405b8dae3eb896da2d61~mv2.jpeg/v1/fill/w_950,h_671,fp_0.50_0.23,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/image00001_jpg.jpeg");
 }
 
 .winter-banner {
+     min-height: 90vh;
+    margin-bottom: 64px;
+    align-items: flex-end;
+    padding: 450px 20px 9vh;
+    margin-left: 17px;
+    margin-right: 17px;
+    border-radius: 17px;
+    overflow: hidden;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.25),
         rgba(0, 0, 0, 0.25)
-    ), url("https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1600&q=85");
+    ), url("https://static.wixstatic.com/media/7b7534_3c22a2ec2e6a4f8fae19f68ffdcf142e~mv2.jpeg/v1/fill/w_950,h_594,fp_0.48_0.17,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC09841-Recovered_jpg.jpeg");
 }
 
 .hero-content {
@@ -388,19 +420,23 @@ article:hover .product-img {
 
 /* Product Images */
 .jacket-1 {
-    background-image: url("https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=700&q=80");
+    /* HUBA Bluedge Puffer Jacket - Frost */
+    background-image: url("https://static.wixstatic.com/media/0634c1_88525cb436134fbfb0201d9b32538db8~mv2.jpg/v1/fill/w_980,h_1225,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/file.jpg");
 }
 
 .jacket-2 {
-    background-image: url("https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80");
+    /* HUBA Halo Bomber Jacket - Grey */
+    background-image: url("https://static.wixstatic.com/media/0634c1_95ba2e89bfb14e0a92d8b6442f2e32a2~mv2.jpg/v1/fill/w_980,h_1225,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/file.jpg");
 }
 
 .jacket-3 {
-    background-image: url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80");
+    /* Your supplied direct image URL */
+    background-image: url("https://static.wixstatic.com/media/0634c1_6b9e104c1c74436cb4f1b6f6482994fe~mv2.jpg/v1/fill/w_299,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/0634c1_6b9e104c1c74436cb4f1b6f6482994fe~mv2.jpg");
 }
 
 .jacket-4 {
-    background-image: url("https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=700&q=80");
+    /* HUBA Sigil Jacket - Blue */
+    background-image: url("https://static.wixstatic.com/media/d0641a_df63cf7f5bf54fc3a19fabdc1ab13d74~mv2.jpg/v1/fill/w_4000,h_5000,al_c,q_90,enc_avif,quality_auto/d0641a_df63cf7f5bf54fc3a19fabdc1ab13d74~mv2.jpg");
 }
 
 .shirt-1 {
@@ -843,7 +879,7 @@ article:hover .product-img {
         height: 18px;
     }
 }
-
+/* Keep the right navigation closer to the right edge */
 @media (min-width: 761px) {
     .nav-right {
         justify-self: end;
